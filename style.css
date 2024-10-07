@@ -1,0 +1,434 @@
+.div {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+.inner_logo {
+    width: 140px;
+}
+
+.logo {
+    background-image: url("./Images/samsung\ logo.jpg");
+    height: 100px;
+    width: 120px;
+    background-size: cover;
+    position: relative;
+    top: -10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    width: 100vw;
+}
+
+.first_panel {
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.first_panel div,
+.Second_panel div {
+    padding: 2px;
+}
+
+.first_panel div:hover,
+.Second_panel div:hover {
+    background-color: black;
+    border-radius: 15px;
+    padding: 5px;
+    border: 2px solid transparent;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.Second_panel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.icon {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.carousel-container {
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.text1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.text2 {
+    text-align: center;
+    text-decoration: underline black;
+    cursor: pointer;
+}
+
+.second-container {
+    background-color: #f7f7f7;
+
+
+
+}
+
+.navbar-second {
+    height: 60px;
+    width: 100vw;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 25px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.navbar-second a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.navbar-second .underline {
+    text-decoration: underline black;
+
+}
+
+.product-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100vw;
+    margin-left: 40px;
+
+}
+
+.outer-logo {
+    height: 400px;
+    width: 400px;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.outer-logo .p {
+    text-align: center;
+    display: block;
+}
+
+.text-color {
+    color: #2189ff;
+}
+
+.detail {
+    position: absolute;
+    margin-top: 200px;
+}
+
+.button {
+    display: none;
+    background-color: #000000;
+    color: white;
+    border: 10px solid black;
+    border-radius: 50px;
+}
+
+.outer-logo:hover .button {
+    display: block;
+}
+
+.outer-logo:hover .invisible-b {
+    display: none;
+}
+
+
+.first-text {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+h1 {
+    padding-top: 20px;
+}
+
+
+.second-text {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+.second-text:hover .button2 {
+    border-radius: 50px;
+    padding: 15px;
+    background-color: rgba(202, 194, 194, 0.982);
+}
+
+
+
+.button2 {
+    display: block;
+
+}
+
+.underline2 {
+    text-decoration: underline black;
+}
+
+.third-container {
+    background-color: rgb(184, 209, 213);
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 650px;
+    background-image: url(./Images/hero2.jpg);
+}
+
+
+.description {
+    text-align: center;
+    margin-top: 350px;
+    color: black;
+}
+
+
+
+.button3:hover {
+    border: 5px solid black;
+    border-radius: 50px;
+    background-color: #000000;
+    cursor: pointer;
+    display: inline;
+    color: white;
+    padding: 5px;
+}
+
+.tab {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.text-3 {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.container4 {
+    margin-left: 40px;
+    margin-right: 40px;
+    background-size: cover;
+    background-color: black;
+    background-image: url(Images/samsung12.jpg);
+    height: 690px;
+    color: white;
+
+}
+
+.line {
+    text-decoration: underline white;
+}
+
+.main-end {
+    margin-top: 100px;
+}
+
+.searchbar {
+    border: 50;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.content {
+    text-align: center;
+}
+
+.searchbar-idea {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.button4 {
+    border: 1px solid goldenrod;
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.facility {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 50px;
+    font-size: small
+}
+
+.facility span {
+    color: #2189ff;
+    cursor: pointer;
+}
+
+.footer-text1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-top: 2px solid rgba(0, 0, 0, 0.129);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.129);
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.ftext1 {
+    font-weight: bold;
+}
+
+.ftext3 {
+    text-decoration: underline black;
+    cursor: pointer;
+}
+
+.footerH {
+    font-weight: bold;
+    font-size: large;
+}
+
+
+.ftext4 {
+    color: #000000fb;
+    font-size: medium;
+    /* border-bottom: 2px solid rgba(0, 0, 0, 0.129); */
+    border-left: 2px solid rgba(0, 0, 0, 0.129);
+    text-align: center;
+
+}
+
+.borderF {
+    text-align: center;
+    color: #000000fb;
+    font-size: medium;
+    /* border-bottom: 2px solid rgba(0, 0, 0, 0.129); */
+}
+
+.borderF li {
+    list-style-type: none;
+    margin: 20px;
+}
+
+.ftext4 li {
+    list-style-type: none;
+    margin: 20px;
+}
+
+.footer-text2 {
+    display: flex;
+    margin-left: 40px;
+    margin-right: 40px;
+    justify-content: space-evenly;
+
+}
+
+.ftext4 li:hover {
+    color: #2189ff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.copyright {
+    height: 100px;
+    width: 100vw;
+    margin-top: 5px;
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 40px;
+    border-top: 2px solid rgba(0, 0, 0, 0.129);
+
+}
+
+.copyright img {
+    cursor: pointer;
+    margin-left: 1200px;
+}
+
+
+
+
+.copyright-image {
+    background-image: url(./Images/copyright.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 188px;
+
+}
+
+.endbar {
+    display: flex;
+    border-top: 2px solid rgba(0, 0, 0, 0.129);
+    margin-left: 40px;
+    font-size: 12px;
+    text-align: center;
+    margin-right: 40px;
+    height: 65px;
+    align-items: center;
+}
+
+.endbar pre {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.end-nav {
+    display: flex;
+    gap: 25px;
+    margin-left: 35px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.social {
+    font-size: 20px;
+    margin-left: 300px;
+    cursor: pointer;
+
+
+}
