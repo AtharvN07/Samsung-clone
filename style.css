@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: Arial;
+    align-content: space-around;
 }
 
 .inner_logo {
@@ -27,7 +28,7 @@
 .first_panel {
     display: flex;
     align-items: center;
-    width: 1000px;
+    width: auto;
     gap: 10px;
     font-size: 14px;
     font-weight: bold;
@@ -73,7 +74,8 @@
     margin-left: 40px;
     margin-right: 40px;
     display: flex;
-    justify-content: center;
+    width: auto;
+    justify-content: space-around;
 }
 
 
@@ -95,9 +97,10 @@
 
 }
 
+
 .navbar-second {
     height: 60px;
-    width: 100vw;
+    width: auto;
     background-color: #f7f7f7;
     display: flex;
     justify-content: center;
@@ -122,14 +125,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    width: 100vw;
+    width: auto;
     margin-left: 40px;
 
 }
 
 .outer-logo {
     height: 400px;
-    width: 400px;
+    width: auto;
     cursor: pointer;
     text-align: center;
     padding-top: 100px;
@@ -431,4 +434,21 @@ h1 {
     cursor: pointer;
 
 
+}
+
+.text-block{
+    position: absolute;
+    bottom: 400px;
+    left: 200px;
+    color: black;
+    padding: 10px 20px;
+}
+.ath{
+    border: 5px solid black;
+    border-radius: 50px;
+    background-color: #000000;
+    cursor: pointer;
+    display: inline;
+    color: white;
+    padding: 5px;
 }
