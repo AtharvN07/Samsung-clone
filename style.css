@@ -25,6 +25,7 @@
     width: 100vw;
 }
 
+
 .first_panel {
     display: flex;
     align-items: center;
@@ -34,10 +35,29 @@
     font-weight: bold;
     margin-left: 10px;
 }
+.first_panel div a{
+    color: #000000;
+    text-decoration: none;
+}
+.first_panel div a:hover{
+    background-color: black;
+    border-radius: 15px;
+    padding: 5px;
+    border: 2px solid transparent;
+    color: white;
+    cursor: pointer;
+
+}
 
 .first_panel div,
 .Second_panel div {
     padding: 2px;
+    padding: 10px;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    transition: color 0.2s;
+    gap: 5px;
 }
 
 .first_panel div:hover,
