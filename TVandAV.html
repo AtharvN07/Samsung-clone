@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV & AV</title>
+   
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx2omzBLOAXaoMkzVgriOqDV2GOJys-KFmAQ&usqp=CAU" type="image/icon type">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#navbar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo>a>img {
+    width: 130px;
+}
+
+#navigation {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#navigation>ul {
+    display: flex;
+
+}
+
+#navigation>ul>li {
+    position: relative;
+}
+
+#navigation>ul>li>a {
+    padding: 10px;
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+#navigation>ul>li>a:hover {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+
+}
+
+#support-cart-login {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#support-cart-login>#explore-suppport-offer-buisness>ul {
+    display: flex;
+
+}
+
+#explore-suppport-offer-buisness>ul>li>a {
+    color: black;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#explore-suppport-offer-buisness>ul>li>a:hover {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+
+#cart-login-user>a>i {
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+}
+
+.drop_down {
+    position: relative;
+    left: 0;
+}
+
+.menu {
+    position: absolute;
+    padding-top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    left: 0;
+
+}
+
+.left>a {
+    color: black;
+    font-size: 30px;
+    line-height: 2;
+}
+
+.left>a:hover {
+    text-decoration: underline;
+}
+
+.left>ul>li {
+    margin-left: -40px;
+}
+
+.left>ul>li>a {
+    color: rgb(54, 54, 54);
+    line-height: 2.2;
+    font-size: 20px;
+}
+
+.left>ul>li>a:hover {
+    color: black;
+}
+
+.image>img {
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 80px;
+}
+
+.image>img:hover {
+    -webkit-transform: scale(1.05);
+}
+
+.image {
+    border-left: 1px solid black;
+
+}
+
+.right {
+    width: 45%;
+}
+
+.left {
+    width: 45%;
+}
+
+.right>a>h3 {
+    text-align: center;
+    color: black;
+    margin-top: 10px;
+}
+
+.right>a {
+    text-align: center;
+}
+
+.right>a>p {
+    color: black;
+    margin-top: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#middle {
+    margin-top: 40px;
+    width: 100%;
+}
+
+#up>h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+#middle-menu {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#middle-menu>a {
+    padding: 20px;
+    font-weight: bold;
+}
+
+#middle-menu>a:hover {
+    color: rgb(88, 85, 85);
+}
+
+#middle-menu-content {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+#fst{
+    width: 50%;
+}
+#fst>img{
+    width: 100%;
+}
+#sec{
+    width: 48%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+}
+#sec>div>img{
+    border-radius: 30px;
+    width: 100%;
+}
+#middle-menu-content>div>img {
+    border-radius: 30px;
+}
+
+#middle-menu-content>div>img:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+    cursor: pointer;
+}
+#sec>div>img:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+    cursor: pointer;
+}
+#mid-sec{
+    margin-top: 40px;
+}
+#mid-sec-content{
+    text-align: center;
+    margin-top: 15px;
+}
+#mid-sec-content>a{
+    padding: 15px;
+    font-weight: bold;
+}
+#mid-sec-img{
+   margin-top: 60px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+#mid-sec-img>img{
+    
+}
+.btn6:hover{
+cursor: pointer;
+color: red;
+}
+#mid-sec1{
+    background-image: url("https://images.samsung.com/is/image/samsung/assets/in/8004_Neo-QLED-Home-Page-Banners_1440x810.jpg?$1440_810_JPG$");
+    width: 100%;
+    height: 800px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav2{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height: 130px;
+}
+#mid-sec1-navigation>a{
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+}
+#mid-sec3{
+    width: 100%;
+    height: 800px;
+    background-image: url("https://images.samsung.com/is/image/samsung/assets/in/9938_Bespoke_Banner_1440x810_1029.jpg?$1440_810_JPG$");
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#mid-sec3-nav{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#mid-sec3-nav-navigation{
+    padding: 15px;
+}
+#mid-sec3-nav-navigation>a{
+    padding: 15px;
+    font-weight: bold;
+}
+#mid-sec3-nav-navigation>a:hover{
+    border-radius: 30px;
+    background-color: rgb(126, 125, 125);
+    color: white;
+}
+#mid-sec3-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#mid-sec4{
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+}
+#image-cursol{
+    width: 48%;
+    height: 500px;
+}
+#mid-sec4-content{
+    width: 46%;
+    height: 500px;
+}
+#image-cursol>img{
+    border-radius: 20px;
+}
+#image-cursol>img:hover{
+    transition: 0.5s;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+#mid-sec4-content>h3{
+    font-size: 30px;
+    line-height: 3.4;
+}
+#mid-sec4-content>h3:hover{
+    border-bottom: 2px solid black;
+}
+body{
+    overflow-x: hidden;
+}
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+button{
+    background-color: blue;
+    border-radius: 30px;
+    color: white;
+    border: 1px solid white;
+    font-size: 8px;
+    padding: 4px;
+}
+#container{
+    display: flex;
+    width: 98%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    font-size: 20px;
+    line-height: 2.7;
+}
+#left{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+#right{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+#center{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+#image>a{
+  text-decoration: underline;
+  color: black;
+  line-height: 1;
+}
+#image>h3{
+    margin-top: 10px;
+}
+#image>img{
+    border-radius: 20px;
+}
+#image>img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.3s;
+    /* transform: scale(1);
+    transition: 0.3s; */
+}
+#logic{
+    width: 98%;
+    margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#logic>a{
+   color: black;
+   border-radius: 50%;
+   text-align: center;
+   font-size: 30px;
+}
+#logic>h2{
+    font-size: 30px;
+}
+a:hover{
+    color: black;
+}
+@media all and (max-width:950px){
+    #container{
+       flex-direction: column;
+    }
+    #left{
+       display: none;
+    }
+    #center{
+        display: none;
+    }
+    #right{
+    
+    }
+    #image{
+        width: 500px;
+        margin: auto;
+        border: 1px solid gren;
+    }
+
+}
+        @media all and (max-width:1365px) {
+    #navigation{
+        display: none;
+    }
+    #explore-suppport-offer-buisness{
+        display: none;
+    }
+    #support-cart-login{
+        justify-content: right;
+    }
+    #user{
+        display: none;
+    }
+   
+}
+@media all and (min-width:1365px){
+    #menu{
+        display: none;
+    }
+}
+@media all and (max-width:905px){
+    #navbar{
+        justify-content: space-around;
+    }
+}
+@media all and (max-width:350px){
+#support-cart-login{
+    display: none;
+}
+#logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#logo>a>img{
+    width: 150px;
+}
+
+}
+        @media all and (max-width:1365px) {
+    #navigation{
+        display: none;
+    }
+    #explore-suppport-offer-buisness{
+        display: none;
+    }
+    #support-cart-login{
+        justify-content: right;
+    }
+    #user{
+        display: none;
+    }
+   
+}
+@media all and (min-width:1400px){
+    #menu{
+        display: none;
+    }
+}
+@media all and (max-width:905px){
+    #navbar{
+        justify-content: space-around;
+    }
+}
+@media all and (max-width:350px){
+#support-cart-login{
+    display: none;
+}
+#logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#logo>a>img{
+    width: 150px;
+}
+
+}
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="logo">
+            <a href="index.html"><img src="image\samsung_logo-removebg-preview.png" alt=""></a>
+        </div>
+        <div id="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mobile.html">Mobile</a></li>
+                <li class="drop_down"><a style="background-color:black;border-radius: 20px;color: white;" href="TVandAV.html">TV & AV</a></li>
+                <li><a href="homeAp.html">Home Applincess</a></li>
+                <li><a href="laptop.html">Laptop & Monitor</a></li>
+                <li><a href="mobile.html">Display</a></li>
+                <li><a href="#">Offer</a></li>
+            </ul>
+        </div>
+        <div id="support-cart-login">
+            <div id="explore-suppport-offer-buisness">
+                <ul>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">For Buisness</a></li>
+                </ul>
+            </div>
+            <div id="cart-login-user">
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="signup.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a id="user" href=""><i class="fa-solid fa-user"></i></a>
+                <a id="menu" href="#"><i class="fa-solid fa-bars"></i></a>
+            </div>
+        </div>
+    </div>
+    <div id="logic">
+        <h2>TV & AV</h2>
+        <!-- add page link which you have made; -->
+        <a href="index.html">X</i></a>
+    </div>
+    <div id="container">
+        <div id="left">
+            <a href="">Fetured</a>
+            <a href="">TVs</a>
+            <a href="">Lifestyle Tvs</a>
+            <a href="">TV by size</a>
+            <a href="">Sound Device</a>
+            <a href="">Care Pack</a>
+            <a href="">e-catlog</a>
+            <a href="">.</a>
+            <a href=""><div class=""></div></a>
+            <a href="">.</a>
+        </div>
+        <div id="center">
+            <a href="">Neo QLED 8K</a>
+            <a href="">Neo QLED 4K</a>
+            <a href="">QLED 4K</a>
+            <a href="">The Frame</a>
+            <a href="">The Serif</a>
+            <a href="">The Premiere</a>
+            <a href="">THe Freestyle <button>new</button></a>
+            <a href="">4K UHD TV</a>
+            <a href="">Smart TV</a>
+            <a href="">All about TV</a>
+        </div>
+        <div id="right">
+            <div id="image">
+                <img src="https://images.samsung.com/is/image/samsung/assets/in/Homepage-ThisMonth_D_624x624.jpg?$330_330_JPG$"
+                    alt="">
+                <h3>New Crystal 4K | 4K Pro</h3>
+                <a href="">Buy Now</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

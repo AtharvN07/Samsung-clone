@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offer</title>
+    <link rel="stylesheet" href="css\commoncssfornavigation.css">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx2omzBLOAXaoMkzVgriOqDV2GOJys-KFmAQ&usqp=CAU" type="image/icon type">
+    <link rel="stylesheet" href="css\navbar Css\index.css">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <style>
+        #navbar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo>a>img {
+    width: 130px;
+}
+
+#navigation {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    margin-top: 25px;
+    margin-right: 550px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#navigation>ul {
+    display: flex;
+
+}
+
+#navigation>ul>li {
+    position: relative;
+}
+
+#navigation>ul>li>a {
+    padding: 10px;
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+#navigation>ul>li>a:hover {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+
+}
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+button{
+    background-color: blue;
+    border-radius: 30px;
+    color: white;
+    border: 1px solid white;
+    font-size: 8px;
+    padding: 4px;
+}
+#container{
+    display: flex;
+    width: 98%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    font-size: 20px;
+    line-height: 2.7;
+}
+#left{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+#right{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+#center{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+#image>a{
+  text-decoration: underline;
+  color: black;
+  line-height: 1;
+}
+#image>h3{
+    margin-top: 10px;
+}
+#image>img{
+    border-radius: 20px;
+}
+#image>img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.3s;
+    /* transform: scale(1);
+    transition: 0.3s; */
+}
+#logic{
+    width: 98%;
+    margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#logic>a{
+   color: black;
+   border-radius: 50%;
+   text-align: center;
+   font-size: 30px;
+}
+#logic>h2{
+    font-size: 30px;
+}
+a:hover{
+    color: black;
+}
+@media all and (max-width:950px){
+    #container{
+       flex-direction: column;
+    }
+    #left{
+       display: none;
+    }
+    #center{
+        display: none;
+    }
+    #right{
+    
+    }
+    #image{
+        width: 500px;
+        margin: auto;
+        border: 1px solid gren;
+    }
+
+}
+        @media all and (max-width:1365px) {
+    #navigation{
+        display: none;
+    }
+    #explore-suppport-offer-buisness{
+        display: none;
+    }
+    #support-cart-login{
+        justify-content: right;
+    }
+    #user{
+        display: none;
+    }
+   
+}
+@media all and (min-width:1400px){
+    #menu{
+        display: none;
+    }
+}
+@media all and (max-width:905px){
+    #navbar{
+        justify-content: space-around;
+    }
+}
+@media all and (max-width:350px){
+#support-cart-login{
+    display: none;
+}
+#logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#logo>a>img{
+    width: 150px;
+}
+
+}
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="logo">
+            <a href="index.html"><img src="image\samsung_logo-removebg-preview.png" alt=""></a>
+        </div>
+        <div id="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a  href="mobile.html">Mobile</a></li>
+                <li class="drop_down"><a href="TVandAV.html">TV & AV</a></li>
+                <li><a href="homeAp.html">Home Applincess</a></li>
+                <li><a  style="background-color:black;border-radius: 20px;color: white;" href="laptop.html">Laptop & Monitor</a></li>
+                <li><a href="#">Display</a></li>
+                <li><a href="#">Offer</a></li>
+            </ul>
+        </div>
+        <!-- <div id="support-cart-login">
+            <div id="explore-suppport-offer-buisness">
+                <ul>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="forbuisness.html">For Buisness</a></li>
+                </ul>
+            </div>
+            <div id="cart-login-user">
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a id="user" href="Login.html"><i class="fa-solid fa-user"></i></a>
+                <a id="menu" href="navigationlink.html"><i class="fa-solid fa-bars"></i></a>
+            </div>
+        </div> -->
+    </div>
+    <div id="logic">
+        <h2>Laptop & Monitor</h2>
+        <!-- add page link which you have made; -->
+        <a href="index.html">X</i></a>
+    </div>
+    <div id="container">
+
+        <div id="left">
+            <a href="">Fetured</a>
+            <a href="">Smart Phone</a>
+            <a href="">Tablet</a>
+            <a href="">Watch</a>
+            <a href="">Glayx Buds</a>
+            <a href="">Accessories</a>
+            <a href="">One UI</a>
+            <a href="">Why Glaxy</a>
+            <a href="">Samsung Care+</a>
+            <a href="">e-catlog</a>
+        </div>
+        <div id="center">
+            <a href="">Glaxy S22 Ultra <button>new</button></a>
+            <a href="">Glaxy S22 | S22+ <button>new</button></a>
+            <a href="">Glaxy Tab S8 | S8+ | S8 Ultra <button>new</button></a>
+            <a href="">Glaxy A53 5G <button>new</button></a>
+            <a href="">Glaxy Z Fold3 5G</a>
+            <a href="">Glaxy S21 FE | S21 | S21+5G</a>
+            <a href="">Glaxy Watch4</a>
+            <a href="">Glaxy Watch4 Classic</a>
+            <a href="">Glaxy Buds</a>
+        </div>
+        <div id="right">
+            <div id="image">
+                <img src="https://images.samsung.com/is/image/samsung/assets/in/gnb/11211_Galaxy-Book2-Series_624x624_02.jpg?$330_330_JPG$"
+                    alt="">
+                <h3></h3>
+                <a href="">Preebook Now</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
